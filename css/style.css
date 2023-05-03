@@ -11,28 +11,24 @@
     height: 100vh;
 }
 
-#clearfix-main{
+#flex-main{
     height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
 }
 
-#clearfix-main::after{
-    content: '';
-    display: table;
-    clear: both;
-}
 
 .container-nav{
     background-color: blue;
     width: 250px;
     height: 100%;
-    float: left;
     position: fixed;
 }
 
 .container-content{
     background-color: red;
     width: calc(100% - 250px);
-    float: left;
+    height: 100%;
 }
 
 .container-footer{
@@ -43,14 +39,21 @@
 }
 
 .col-nav{
-    width: calc(100% - 20px);
+    width: calc(100% - 4px);
     background-color: red;
-    margin: 10px;
+    border: 2px solid black;
+}
+
+.content-main{
+    width: calc(100% - 250px);
+    height: 100%;
+    background-color: red;
+    margin-left: 250px;
 }
 
 /* BLOCCHI NAV */
 .col1 , .col4{
-    height: 70px;
+    height: 90px;
 }
 
 .col2{
@@ -63,9 +66,9 @@
 /* FINE BLOCCHI NAV */
 
 /* BLOCCHI CONTENT */
-.row{
+/* .row{
     margin: 20px 0;
-}
+} */
 
 .flex{
     display: flex;
@@ -81,8 +84,9 @@
 
 .nav-content{
     background-color: orange;
+    width: 100%;
     height: 70px;
-    margin-top: 180px;
+    margin-top: 110px;
 }
 .mod{
     background-color: blue;
@@ -96,6 +100,10 @@
     width: calc(100% / 6 - 20px);
     margin: 10px;
     height: 120px;
+}
+
+.margin-bottom{
+    margin-bottom: 200px;
 }
 
 
