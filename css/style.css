@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
 
@@ -27,6 +28,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     padding-left: 10px;
+    padding-right: 10px;
 }
 /* TOP SIDEBAR */
 .logo{
@@ -64,16 +66,10 @@ li{
 
 
 .large-icon{
-    font-size: 40px;
-    padding: 5px;
-    background-color: #aeaeae;
-}
-
-
-.large-icon{
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     background-color: #aeaeae;
+    color: black;
 }
 
 h4{
@@ -208,6 +204,43 @@ h4{
 }
 
 /* FINE CONTENT MAIN */
+
+/* MAIN CONTENT */
+ 
+.row-song{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.col-16-song{
+    width: calc(100% / 6 - 20px);
+    margin: 10px;
+}
+
+.col-100-song{
+    width: 100%;
+}
+
+.dimension{
+    width: 100%;
+}
+
+.text-album{
+    text-align: center;
+}
+
+.text-album span, .col-100-song span{
+    font-size: 12px;
+    color: #aeaeae;
+}
+
+.img-radious{
+    border-radius: 50%;
+}
+/* FINE MAIN */
+
 
 /* FINE MAIN */
 
