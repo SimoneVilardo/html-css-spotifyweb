@@ -7,50 +7,39 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Spotify</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- INIZIO CONTENITORE DELLA PAGINA -->
-    <!-- INIZIO MAIN -->
-    <main id="flex-main">
-        <nav class="container-nav">
-            <div class="rov-nav">
-                <div class="top">
-                    <!-- INIZO LOGO NAV -->
-                    <div class="col-nav">
-                        <img id="logo" src="./img/logo.svg" alt="logo">
-                    </div>
-                    <!-- FINE LOGO NAV -->
-
-                    <!-- INIZIO HOME NAV -->
-                    <div class="col-nav">
-                        <ul>
-                            <li>
-                                <img class="home" src="./img/home.svg" alt="home">
-                                <a class="link-nav" href="#">Home</a>
-                            </li>
-                            <li>
-                                <img class="home" src="./img/search.svg" alt="search">
-                                <a class="link-nav" href="#">cerca</a>
-                            </li>
-                            <li>
-                                <img class="home" src="./img/libreria.svg" alt="libreria">
-                                <a class="link-nav" href="#">La tua libreria</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- FINE HOME NAV -->
-
-                    <!-- INIZIO PLAYLIST NAV -->
-                    <div class="col-nav">
-                        <h4>PLAYLIST</h4>
+    <main>
+        <div class="sidebar">
+            <div class="top-sidebar">
+                <div class="logo">
+                    <img id="logo-spotify" src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li>
+                            <img class="home" src="./img/home.svg" alt="home">
+                            <a class="link-nav" href="#">Home</a>
+                        </li>
+                        <li>
+                            <img class="home" src="./img/search.svg" alt="search">
+                            <a class="link-nav" href="#">cerca</a>
+                        </li>
+                        <li>
+                            <img class="home" src="./img/libreria.svg" alt="libreria">
+                            <a class="link-nav" href="#">La tua libreria</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="playlist">
+                    <h4>PLAYLIST</h4>
                         <ul>
                             <li>
                                 <i class="fas fa-plus large-icon"></i><a id="playlist" class="link-nav" href="#">Crea Playlist</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-nav height-playlist">
+                    <div class="menu-list">
                         <ul>
                             <li id="plus-space-first-li" class="li-space">
                                 <a class="link-nav" href="#">Nome Playlist</a>
@@ -76,69 +65,95 @@
                         </ul>
                     </div>
                 </div>
-                
-                <!-- FINE PLAYLIST NAV -->
-                
-                <!-- INIZIO BOTTOM -->
-                <div class="bottom">
-                    <div class="col-nav position">
-                        <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt accusantium vero minima excepturi, aliquid culpa porro sequi animi dignissimos consequuntur, dolores necessitatibus tenetur id alias unde ad ducimus, itaque omnis.</p>
-                    </div>
-                </div>
-                <!-- FINE BOTTOM -->
-
             </div>
-        </nav>
-        <!-- INIZIO CONTENT PAGINA -->
-        <div class="content-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-100 header"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="nav-content"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row flex">
-                    <div class="col-100 mod"></div>
-                    <div class="col-16"></div>
-                    <div class="col-16"></div>
-                    <div class="col-16"></div>
-                    <div class="col-16"></div>
-                    <div class="col-16"></div>
-                    <div class="col-16"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row flex">
-                    <div class="col-100 mod"></div>
-                    <div class="col-16"></div>
-                    <div class="col-16"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row flex margin-bottom">
-                    <div class="col-100 mod"></div>
-                    <div class="col-16"></div>
-                    <div class="col-16"></div>
-                </div>
+            <div class="bottom-sidebar">
+                <div class="installa-app">
+                    <a class="mod-link" href="#"><img src="img/download.svg" alt=""><span>Installa app</span></a>
+                  </div>
+                  <div class="user">
+                    <div class="avatar"><img src="img/profile.svg" alt=""></div>
+                    <h2 class="name">John Doe</h2>
+                  </div>
             </div>
         </div>
-    <!-- FINE CONTENT PAGINA -->
+        <div class="main-content">
+            <div class="top-bar">
+                <a href="#" class="upgrade">Effettua l'upgrade</a>
+            </div>
+            <div class="content">
+                <ul class="menu-list-bottom menu-inline">
+                    <li><a href="#" class="active">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <!-- FINE MAIN --> 
-
-    <!-- INIZIO FOOTER -->
-    <footer>
-        <div class="container-footer">
+    <div class="bottom-bar">
+        <!-- PALYER -->
+        <div id="player">
+            <!-- ALBUM -->
+            <div class="player-album">
+                <div class="player-album-cover">
+                  <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="album-title">
+                  <h2><a href="#">Sinister</a></h2>
+                  <p><a href="#">Brano Nome</a></p>
+                </div>
+                <div class="player-icons">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="far fa-folder"></i></a>
+                </div>
+            </div> 
+            <!-- FINE ALBUM -->
+             <!-- CONTROLLER -->
+            <div class="player-controller">
+                <!-- ICONE -->
+                <div class="player-controller-icons">
+                    <ul class="menu-list-bottom">
+                        <li><i class="fas fa-random"></i></li>
+                        <li><i class="fas fa-step-backward"></i></li>
+                        <li class="player-controller-play-ico"><i class="far fa-play-circle"></i></li>
+                        <li><i class="fas fa-step-forward"></i></li>
+                        <li><i class="fas fa-redo-alt"></i></li>
+                    </ul>
+                </div>
+                <!-- FINE ICONE -->
+    
+                <!-- TIME -->
+                <div class="player-controller-time">
+                    <div class="time-min">0:25</div>
+                    <div class="player-bar">
+                        <div class="controller perc-20">
+                            <div class="controller-point"></div>
+                        </div>
+                    </div>
+                    <div class="time-min">4:35</div>
+                </div>
+                <!-- FINE TIME -->
+            </div>
+            <!-- FINE CONTROLLER -->
+            <!-- AUDIO -->
+            <div class="player-audio">
+                <ul class="menu-list-bottom">
+                    <li><i class="fas fa-list-ul"></i></li>
+                    <li><i class="fas fa-desktop"></i></li>
+                    <li class="audio-volume"><i class="fas fa-volume-up"></i>
+                        <div class="player-bar">
+                            <div class="controller perc-20">
+                                <div class="controller-point"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- FINE AUDIO -->
         </div>
-    </footer>
-    <!-- FINE FOOTER -->
-
-
-    <!-- FINE CONTENITORE DELLA PAGINA -->
+        <!-- FINE PALYER -->
+    </div>
 </body>
 </html>
