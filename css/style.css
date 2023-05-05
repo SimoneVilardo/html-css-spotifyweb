@@ -236,6 +236,7 @@ a hr{
     flex-wrap: wrap;
     width: 100%;
     padding-left: 10px;
+    margin-bottom: 50px;
 }
 
 .col-16-song{
@@ -243,8 +244,35 @@ a hr{
     margin: 10px;
 }
 
+.position-song{
+    position: relative;
+}
+
 .col-100-song{
     width: 100%;
+    margin: 0 0 25px 10px;
+}
+
+.margin-span-song{
+    margin-bottom: 10px;
+}
+
+.hover-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 50px;
+    display: none;
+}
+
+.hover-img i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .dimension{
@@ -372,7 +400,15 @@ a hr{
     list-style: none;
     font-size: 13px;
     line-height: 35px;
+    color: #fff;
+}
+
+.list-grey{
     color: #aeaeae;
+}
+
+.list-white{
+    color: #fff;
 }
 
 .controller-time {
@@ -426,6 +462,16 @@ a hr{
     align-items: center;
     justify-content: space-between;
 }
+
+.white-point{
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: -115%;
+    display: none;
+}
 /* FINE AUDIO */
 
 /* FINE FOOTER */
@@ -433,7 +479,47 @@ a hr{
 /* HOVER PAGINA */
 a:hover{
     color: #fff;
+    opacity: 1;
 }
+
+.text-decoration:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.hover-playlist:hover{
+    color: #fff;
+}
+.large-icon:hover{
+    background-color: #fff;
+}
+
+.player-icons i:hover{
+    color: #fff;
+}
+
+.player-controller-play-ico:hover{
+    transform: scale(1.1);
+}
+
+
+.top-bar a:hover{
+    transform: scale(1.1);
+}
+
+.col-16-song:hover .hover-img{
+    display: block;
+    cursor: pointer;
+}
+
+.controller:hover{
+    background-color: greenyellow;
+}
+
+.player-bar:hover .white-point{
+    display: block;
+}
+
 /* FINE HOVER PAGINA */
 
 /* INIZIO QUERY */
