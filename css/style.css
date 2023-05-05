@@ -43,6 +43,10 @@ main{
     padding: 10px 0;
 }
 
+#spotify-small{
+    display: none;
+}
+
 .main-menu ul li {
     padding: 3px 10px;
 }
@@ -431,3 +435,85 @@ a:hover{
     color: #fff;
 }
 /* FINE HOVER PAGINA */
+
+/* INIZIO QUERY */
+
+/* DESKTOP */
+@media screen and (max-width: 1024px) {
+    .col-16-song{
+        width: calc(100% / 4 - 20px);
+        flex-wrap: wrap;
+    }
+}
+/* FINE DESKTOP */
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    .col-16-song{
+        width: calc(100% / 2 - 20px);
+        flex-wrap: wrap;
+    }
+}
+/* FINE TABLET */
+
+/* PHONE */
+@media screen and (max-width: 600px) {
+    .sidebar{
+        width: 50px;
+        padding-left: 5px;
+    }
+
+    #logo-spotify{
+        display: none;
+    }
+
+    #spotify-small{
+        display: block;
+        width: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .main-menu ul li:first-child {
+        border: none;
+    }
+
+    .top-bar{
+        width: calc(100% - 50px);
+    }
+
+    .main-content{
+        width: calc(100% - 50px);
+    }
+
+    .top-sidebar a{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+
+    .installa-app img{
+        margin-right: 0;
+    }
+
+    .mod-link span{
+        display: none;
+    }
+
+    .user h2{
+        display: none;
+    }
+
+    .user{
+        all: unset;
+    }
+
+    .installa-app{
+        border: none;
+    }
+
+}
+/* FINE PHONE */
+
+/* FINE QUERY */
