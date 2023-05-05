@@ -27,8 +27,11 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 10px;
     padding-right: 10px;
+}
+
+.playlist, .bottom-sidebar, .logo{
+    padding: 0 10px;
 }
 /* TOP SIDEBAR */
 .logo{
@@ -38,6 +41,10 @@ main{
 #logo-spotify{
     width: 100px;
     padding: 10px 0;
+}
+
+.main-menu ul li {
+    padding: 3px 10px;
 }
 
 .home{
@@ -59,6 +66,10 @@ main{
     font-size: 12px;
 }
 
+.main-menu ul li:first-child {
+    border-left: 2px solid greenyellow;
+}
+
 li{
     list-style-type: none;
     padding: 5px 0;
@@ -73,7 +84,6 @@ li{
 }
 
 h4{
-    color: #fff;
     padding: 25px 0;
 }
 
@@ -93,7 +103,7 @@ h4{
 
 
 
-/* BOTTOM */
+/* BOTTOM SIDEBAR */
 .buttom-sidebar{
     display: flex;
     flex-direction: column;
@@ -148,7 +158,7 @@ h4{
     padding: 10px 0;
 }
 
-/* FINE BOTTOM */
+/* FINE BOTTOM SIDEBAR */
 
 /* FINE SIDEBAR */
 
@@ -201,6 +211,16 @@ h4{
     padding-bottom: 5px;
     text-decoration: none;
     color: #aeaeae;
+}
+
+#hr-greenyellow{
+    color: greenyellow;
+    margin-left: 30px;
+}
+
+a hr{
+    width: 30%;
+    color: transparent;
 }
 
 /* FINE CONTENT MAIN */
@@ -310,7 +330,7 @@ h4{
 
 .player-icons i{
     margin-left: 10px;
-    color: #fff;
+    color: #aeaeae;
 }
 
 /* FINE SECTION PLAYER */
@@ -348,10 +368,10 @@ h4{
     list-style: none;
     font-size: 13px;
     line-height: 35px;
-    color: white;
+    color: #aeaeae;
 }
 
-.player-controller-time {
+.controller-time {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -405,3 +425,9 @@ h4{
 /* FINE AUDIO */
 
 /* FINE FOOTER */
+
+/* HOVER PAGINA */
+a:hover{
+    color: #fff;
+}
+/* FINE HOVER PAGINA */
